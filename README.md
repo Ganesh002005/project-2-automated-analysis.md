@@ -1,6 +1,9 @@
 ![overall_distribution (1)](https://github.com/user-attachments/assets/661e23ad-5fd8-40d1-9747-cace7aa0f6a5)
 ![quality_distribution (1)](https://github.com/user-attachments/assets/43436fcb-a3e3-4cc4-85a0-987ae485998f)
 ![repeatability_distribution](https://github.com/user-attachments/assets/6c431398-bcf3-4775-8ca7-b48468c77d24)
+
+
+
 Based on the provided data summary, we can perform a detailed analysis across several dimensions, including trends in data entries, properties of the dataset, the distribution of the ratings, and relationships between different variables. Here's an analysis segmented into several key areas:
 
 ### 1. **Data Composition Overview**
