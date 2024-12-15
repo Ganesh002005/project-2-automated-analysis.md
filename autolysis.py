@@ -12,10 +12,10 @@ AIPROXY_TOKEN = "eyJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6IjIzZjEwMDA2MjlAZHMuc3R1ZHkuaW
 
 def load_data():
     """Load CSV data with encoding detection."""
-    with open("/content/goodreads.csv", 'rb') as f:
+    with open("/content/media.csv", 'rb') as f:
         result = chardet.detect(f.read())
     encoding = result['encoding']
-    return pd.read_csv("/content/goodreads.csv", encoding=encoding)
+    return pd.read_csv("/content/media.csv", encoding=encoding)
 
 def analyze_data(df):
     """Perform basic data analysis."""
@@ -61,8 +61,8 @@ def generate_narrative(analysis):
         print(f"An unexpected error occurred: {e}")
     return "Narrative generation failed due to an error."
 
-def main(file_path="/content/goodreads.csv"): # Added default file_path
-    df = load_data() # Call load_data without file_path 
+def main(file_path="/content/media.csv"): # Added default file_path
+    df = load_data() # Call load_data without file_path
     analysis = analyze_data(df)
     visualize_data(df)
     narrative = generate_narrative(analysis)
